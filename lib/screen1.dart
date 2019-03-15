@@ -46,8 +46,16 @@ class _Screen1State extends State<Screen1> {
                           height: 100.0,
                           alignment: Alignment.center,
                           child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.amber,
+                            leading: Container(
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/kabir.jpg"),
+                                backgroundColor: Colors.white,
+                              ),
+                              padding: const EdgeInsets.all(1.0),
+                              decoration: new BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  shape: BoxShape.circle
+                              ),
                             ),
                             title: Text('Kabir'),
                             subtitle: Text("Description"),
@@ -79,8 +87,16 @@ class _Screen1State extends State<Screen1> {
                           height: 100.0,
                           alignment: Alignment.center,
                           child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.amber,
+                            leading: Container(
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/sudaksh.jpg"),
+                                backgroundColor: Colors.white,
+                              ),
+                              padding: const EdgeInsets.all(1.0),
+                              decoration: new BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  shape: BoxShape.circle
+                              ),
                             ),
                             title: Text('Sudaksh'),
                             subtitle: Text("Description"),
@@ -112,8 +128,16 @@ class _Screen1State extends State<Screen1> {
                           height: 100.0,
                           alignment: Alignment.center,
                           child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.amber,
+                            leading: Container(
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/samarth.jpg"),
+                                backgroundColor: Colors.white,
+                              ),
+                              padding: const EdgeInsets.all(1.0),
+                              decoration: new BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  shape: BoxShape.circle
+                              ),
                             ),
                             title: Text('Samarth'),
                             subtitle: Text("Description"),
@@ -145,8 +169,16 @@ class _Screen1State extends State<Screen1> {
                           height: 100.0,
                           alignment: Alignment.center,
                           child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.amber,
+                            leading: Container(
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/userimg.jpg"),
+                                backgroundColor: Colors.white,
+                              ),
+                              padding: const EdgeInsets.all(1.0),
+                              decoration: new BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  shape: BoxShape.circle
+                              ),
                             ),
                             title: Text('Tarushi'),
                             subtitle: Text("Description"),

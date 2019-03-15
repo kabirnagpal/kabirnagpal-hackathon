@@ -43,6 +43,9 @@ flutter:
   - assets/google-logo-filled.png
   - assets/userimg.jpg
   - assets/logo.png
+  - assets/sudaksh.jpg
+  - assets/kabir.jpg
+  - assets/samarth.jpg
 
   fonts:
   - family: Product Sans

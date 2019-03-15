@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './screen1.dart';
 import './screen2.dart';
 import './screen3.dart';
+import 'utils/bubble_bottom_bar.dart';
 
 void main() => runApp(MaterialApp(
   theme: ThemeData (
@@ -29,6 +30,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF00a8ff),
         title: Text('SecureIT'),
         centerTitle: true,
         actions: <Widget>[
@@ -78,14 +80,48 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
       ),
       body: wigs[_index],
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: BubbleBottomBar(
+        backgroundColor: Colors.white,
+        opacity: .2,
         currentIndex: _index,
         onTap:ontapped,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.person_outline), title: Text('Users')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.add_circle_outline), title: Text('Add User')),
-          BottomNavigationBarItem(icon: Icon(Icons.linked_camera), title: Text('Surveillance')),
+        items: <BubbleBottomBarItem>[
+          BubbleBottomBarItem(
+            backgroundColor: Color(0xFF00a8ff),
+            icon: Icon(
+              Icons.person_outline,
+              color: Color(0xFF00a8ff),
+            ),
+            activeIcon: Icon(
+              Icons.person_outline,
+              color: Color(0xFF00a8ff),
+            ),
+            title: Text("Users"),
+          ),
+          BubbleBottomBarItem(
+            backgroundColor: Color(0xFF00a8ff),
+            icon: Icon(
+              Icons.add_circle,
+              color: Color(0xFF00a8ff),
+            ),
+            activeIcon: Icon(
+              Icons.add_circle,
+              color: Color(0xFF00a8ff),
+            ),
+            title: Text("Add User"),
+          ),
+          BubbleBottomBarItem(
+            backgroundColor: Color(0xFF00a8ff),
+            icon: Icon(
+              Icons.linked_camera,
+              color: Color(0xFF00a8ff),
+            ),
+            activeIcon: Icon(
+              Icons.linked_camera,
+              color: Color(0xFF00a8ff),
+            ),
+            title: Text("Surveillence"),
+          ),
         ],
       ),
     );
