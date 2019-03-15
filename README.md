@@ -15,6 +15,7 @@ A product that ensures your home is safe from intruders using face recognition a
 - Click onto the ```main.html``` file
 
 ## Our model detecting us :smiley:
+- Our Deep Learning model is stored inside ```DeepLearning``` directory
 <img src="https://user-images.githubusercontent.com/39271055/54461903-f8b6b980-4793-11e9-8206-a3979a82bf21.png" width="300" height="230"/> 
 
 ## Screenshots
