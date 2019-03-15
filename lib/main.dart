@@ -57,8 +57,25 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
                     ]),
               ), // ),
             ),
+            ListTile(
+              leading:Icon(Icons.settings),
+              title: Text('Settings'),
+              onTap:(){},
+            ),
+            ListTile(
+              leading:Icon(Icons.bug_report),
+              title: Text('Report a problem'),
+              onTap:(){},
+            ),
+            Divider(),
+            ListTile(
+              leading:Icon(Icons.power_settings_new),
+              title: Text('Logout'),
+              onTap:(){},
+            ),
           ],
         ),
+
       ),
       body: wigs[_index],
       bottomNavigationBar: BottomNavigationBar(

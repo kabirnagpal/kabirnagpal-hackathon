@@ -6,36 +6,162 @@ class Screen1 extends StatefulWidget {
 }
 
 class _Screen1State extends State<Screen1> {
+  bool _value1 = false;
+  bool _value2 = false;
+  bool _value3 = false;
+  bool _value4 = false;
+
+
+  void _onChanged1(bool value) => setState(() => _value1 = value);
+  void _onChanged2(bool value) => setState(() => _value2 = value);
+  void _onChanged3(bool value) => setState(() => _value3 = value);
+  void _onChanged4(bool value) => setState(() => _value4 = value);
+
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: 4,
-      itemBuilder: (context,index){
-        return Container(
-          padding: EdgeInsets.all(3.0),
-          child: Card(
-            elevation: 4.0,
-            margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
-            borderOnForeground: true,
-            child: Container(
-              height: 100.0,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
+    return Scaffold(
+        body:SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: <Widget>[
 
-              ),
-              child: ListTile(
 
-                leading: CircleAvatar(
-                  backgroundColor: Colors.amber,
+                Container(
+                  padding: EdgeInsets.all(3.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(
+                        color: Color(0xffafafaf),
+                        width: 1.0,
+                      ),
+                    ),
+                    elevation: 4.0,
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                    borderOnForeground: true,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber,
+                            ),
+                            title: Text('Kabir'),
+                            subtitle: Text("Description"),
+                            trailing: new Switch(value: _value1, onChanged: _onChanged1),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-                title: Text('Name ${index+1}'),
-                subtitle: Text("Description"),
-              ),
+
+
+                Container(
+                  padding: EdgeInsets.all(3.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(
+                        color: Color(0xffafafaf),
+                        width: 1.0,
+                      ),
+                    ),
+                    elevation: 4.0,
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                    borderOnForeground: true,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber,
+                            ),
+                            title: Text('Sudaksh'),
+                            subtitle: Text("Description"),
+                            trailing: new Switch(value: _value2, onChanged: _onChanged2),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+
+                Container(
+                  padding: EdgeInsets.all(3.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(
+                        color: Color(0xffafafaf),
+                        width: 1.0,
+                      ),
+                    ),
+                    elevation: 4.0,
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                    borderOnForeground: true,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber,
+                            ),
+                            title: Text('Samarth'),
+                            subtitle: Text("Description"),
+                            trailing: new Switch(value: _value3, onChanged: _onChanged3),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+
+                Container(
+                  padding: EdgeInsets.all(3.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(
+                        color: Color(0xffafafaf),
+                        width: 1.0,
+                      ),
+                    ),
+                    elevation: 4.0,
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                    borderOnForeground: true,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber,
+                            ),
+                            title: Text('Tarushi'),
+                            subtitle: Text("Description"),
+                            trailing: new Switch(value: _value4, onChanged: _onChanged4),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+              ],
             ),
           ),
-        );
-      },
-
+        )
     );
   }
 }
