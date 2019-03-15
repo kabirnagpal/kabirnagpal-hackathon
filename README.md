@@ -1,16 +1,18 @@
 # SecureIT
 
-A new Flutter application.
+Safety Redefined.
+A product that ensures your home is safe from intruders using face recognition algorithm.We have used Computer Vision and Deep Learning to solve this problem, Our realtime IP camera stream would have the record of all the happenings around the house this further would livestream on a python server which has a pretrained model to detect whether the person is an intruder or not. If the person comes out to be an intruder then the app notifies the user that an intruder just entered the house. 
 
-## Getting Started
+## The App
+- Dive into the app directory
+- Ensure you have flutter on your PC
+- Get all the flutter packages using: ```flutter packages get```
+- Connect a device
+- Run ```flutter run``` on your terminal
 
-This project is a starting point for a Flutter application.
+## The Website
+- Dive into the website folder
+- Click onto the ```main.html``` file
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
