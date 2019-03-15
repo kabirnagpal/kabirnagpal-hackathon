@@ -1,4 +1,4 @@
-# secure
+# SecureIT
 
 A new Flutter application.
 
